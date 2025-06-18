@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <title>시크릿 - 신규가입</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&amp;display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+  <script src="js/script.js"></script>  <!-- 자바스크립트 파일을 연결 -->
+  <link rel="stylesheet" href="css/style.css">  <!-- 스타일시트 연결 -->
+</head>
+
+<body style="background-color: #ffffff">
+
+<div class="login_table">
+  <div class="login_row">
+    <div class="logo_bi"><img src="img/logo.png" style="width:160px; height:auto;"></div>
+
+    <form class="signup-form" action="signup_update.php" method="post" onsubmit="return validateForm()">
+      <div class="field">
+        <input type="text" id="username" name="username" placeholder="아이디(8자리 이상)">
+        <div class="icon">
+          <i class="fa fa-user"><img src="img/id_icon.svg"></i>
+        </div>
+      </div><br>
+
+      <div class="field">
+        <input type="password" id="password" name="password" placeholder="패스워드(6자리 이상)">
+        <div class="icon">
+          <i class="fa fa-user"><img src="img/pass_icon.svg"></i>
+        </div>
+      </div><br>
+
+      <div class="field">
+        <input type="text" id="code" name="code" placeholder="추천인 코드 (선택)">
+        <div class="icon">
+          <i class="fa fa-user"><img src="img/code_ico.svg"></i>
+        </div>
+      </div><br>
+
+      <button type="submit" style="border-radius: 100px; height: 48px; width: 100%; color: #FFFFFF; border-width: 0px !important; font-weight: 600;
+        background: linear-gradient(270.00deg, rgb(252, 71, 50), rgb(229, 35, 105) 100%); font-size: medium;">신규가입</button>
+    </form>
+
+    <div style="width: 100%; display: flex; justify-content: center;">
+      <span style="color: #333333; padding-right: 10px;">이미 계정이 있으신가요?</span>
+      <a href="login.html" style="color: #FC4733; font-weight: 600;">로그인</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script> <!-- 자바스크립트 파일 연결 -->
+</body>
+</html>

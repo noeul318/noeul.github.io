@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo_bi">
+      <img src="img/logo1.png" alt="로고">
+    </div>
+
+    <form action="login_update.php" method="post" class="login_form">
+      <div class="field">
+        <div class="icon">
+          <img src="img/id_icon1.png" alt="아이디 아이콘">
+        </div>
+        <input type="text" id="username" name="username" placeholder="아이디">
+      </div>
+
+      <div class="field">
+        <div class="icon">
+          <img src="img/pass_icon1.png" alt="패스워드 아이콘">
+        </div>
+        <input type="password" id="password" name="password" placeholder="패스워드">
+      </div>
+
+      <button type="submit" class="login_button">로그인</button>
+    </form>
+
+    <div class="register_link">
+      <span>아직 계정이 없으신가요?</span>
+      <a href="register.php">신규가입</a>
+    </div>
+  </div>
+
+</body>
+</html>

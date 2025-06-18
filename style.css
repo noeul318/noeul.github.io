@@ -1,0 +1,142 @@
+/* 전체 배경 */
+body {
+  background-color: #ffffff;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* 화면 전체 높이 */
+  display: flex;
+  justify-content: center; /* 수평 중앙 */
+  align-items: center; /* 수직 중앙 */
+}
+
+/* 로그인 테이블 */
+.login_table {
+  display: flex;
+  justify-content: center;  /* 수평 중앙 정렬 */
+  align-items: center;      /* 수직 중앙 정렬 */
+  width: 100%;
+  max-width: 400px; /* 고정 너비 */
+  padding: 20px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+/* 로고 */
+.logo_bi {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo_bi img {
+  width: 160px; /* 로고 크기 */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 입력폼 */
+.login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 아이템 수평 중앙 정렬 */
+  width: 100%;
+  max-width: 400px; /* 고정 너비 */
+  justify-content: center; /* 중앙 배치 */
+  gap: 20px; /* 입력칸과 버튼 사이의 간격 */
+}
+
+/* 입력칸 */
+.field {
+  position: relative;
+  width: 120%; /* 입력칸 너비 */
+  display: flex;
+  justify-content: center; /* 입력칸 중앙 정렬 */
+}
+
+.field input {
+  width: 200%; /* 입력칸 너비 */
+  max-width: 200%; /* 원본과 비슷한 너비로 설정 */
+  height: 30px; /* 입력칸 높이를 조금 줄였습니다 */
+  padding: 5px 20px 5px 50px; /* 위아래 패딩을 5px로 줄였습니다 */
+  border: 1px solid transparent; /* 스트로크를 1px로 설정 */
+  border-radius: 100px;
+  font-size: 14px;
+  outline: none;
+  background-color: #fff;
+  
+  /* 그라데이션 스트로크 */
+  background-image:
+    linear-gradient(#fff, #fff),
+    linear-gradient(to right, #4facfe, #00f2fe); /* 파란색 그라데이션 스트로크 */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+/* 입력칸 아이콘 */
+.field .icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.field .icon img {
+  width: 18px;
+  height: 18px;
+}
+
+/* 로그인 버튼 */
+button {
+  border-radius: 100px;
+  height: 48px; /* 버튼 높이 설정 */
+  width: 120%; /* 버튼 너비는 100%로 설정 */
+  color: #ffffff;
+  border-width: 0;
+  font-weight: 600;
+  background: linear-gradient(270deg, rgb(252, 71, 50), rgb(229, 35, 105)); /* 그라데이션 유지 */
+  font-size: 16px; /* 텍스트 크기 조정 */
+  background-image: linear-gradient(to right, #4facfe, #00f2fe); /* 버튼 그라데이션 변경한 그대로 유지 */
+  border-radius: 100px; /* 버튼 둥글게 */
+  border: 1px solid transparent; /* 그라데이션 스트로크 추가 */
+  background-origin: border-box;
+  background-clip: padding-box, border-box; /* 그라데이션 스트로크 */
+  
+  /* 간격 수정: margin-top 줄여서 버튼과 입력칸 간 간격을 좁힘 */
+  margin-top: 5px; /* 간격을 10px로 설정 (기존보다 줄임) */
+  
+  padding: 0 20px; /* 좌우 패딩 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+
+  /* 텍스트 중앙 배치 */
+  line-height: 46px; /* 텍스트를 수직 중앙에 배치 */
+  vertical-align: middle; /* 텍스트 중앙 배치 */
+}
+
+
+/* 하단 "신규가입" 링크 스타일 */
+a {
+  text-decoration: none;
+  background-image: linear-gradient(to right, #4facfe, #00f2fe); /* 그라데이션 적용 */
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 4px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 추가 텍스트 */
+span {
+  color: #333333;
+  font-size: 15px; /* 원본 사이트 크기와 맞추기 */
+  padding-right: 10px;
+  margin-top: 5px; /* 텍스트와 버튼 간 간격을 줄임 */
+}
